@@ -14,12 +14,8 @@ public class S3_Rotacion_forma1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float velocidad = 12;
         float angulos = 5 * Time.deltaTime * velocidad;
                       // x     y     z
         transform.Rotate(0, angulos, 0);
-
-
-
     }
 }
