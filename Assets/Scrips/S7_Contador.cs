@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class S7_Contador : MonoBehaviour
 {
+    [SerializeField] ChangeScene auxiliar;
     int cont;
     [SerializeField] TextMeshProUGUI text_contador;
     // Start is called before the first frame update
@@ -19,7 +20,9 @@ public class S7_Contador : MonoBehaviour
         while(cont>0){
             cont--;
             text_contador.text= cont.ToString();
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
         }
+        int score = aux_cont_enemigos.contador;
+        auxiliar.cambioEscena(2, score);
     }
 }
