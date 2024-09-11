@@ -6,7 +6,8 @@ using UnityEngine;
 public class S8_DestruyeObj : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI text_puntuacion;
-    int contador;
+    public int contador;
+    
     private void Start(){
         contador=0;
     }

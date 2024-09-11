@@ -6,13 +6,14 @@ using UnityEngine;
 public class S7_Contador : MonoBehaviour
 {
     [SerializeField] ChangeScene auxiliar;
+    [SerializeField] S8_DestruyeObj aux_cont_enemigos;
     int cont;
     [SerializeField] TextMeshProUGUI text_contador;
     // Start is called before the first frame update
     void Start()
     {
-    cont = 20; 
-    StartCoroutine(coroutine_contador());
+    cont = 10; 
+    StartCoroutine("coroutine_contador");
     }
 
     // Update is called once per frame
@@ -22,7 +23,8 @@ public class S7_Contador : MonoBehaviour
             text_contador.text= cont.ToString();
             yield return new WaitForSeconds(1f);
         }
+
         int score = aux_cont_enemigos.contador;
-        auxiliar.cambioEscena(2, score);
+        auxiliar.cambioEscena(2, score);//Escena de fin de juego
     }
 }

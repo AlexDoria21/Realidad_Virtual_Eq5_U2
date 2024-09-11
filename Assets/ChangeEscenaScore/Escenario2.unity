@@ -1912,7 +1912,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2e6665e22c1c0f4f85dabec62884ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  auxiliar: {fileID: 0}
+  auxiliar: {fileID: 1037598377}
+  aux_cont_enemigos: {fileID: 2101727792}
   text_contador: {fileID: 932530476}
 --- !u!114 &2101727792
 MonoBehaviour:
@@ -1927,6 +1928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text_puntuacion: {fileID: 1305028547}
+  contador: 0
 --- !u!1 &2105564330
 GameObject:
   m_ObjectHideFlags: 0
