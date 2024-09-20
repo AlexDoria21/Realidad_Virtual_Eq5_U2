@@ -30,6 +30,5 @@ public class MovSphereMini : MonoBehaviour
         }   else if(Input.GetKey(KeyCode.E)){
             transform.Rotate(0, -1 * velocidad_rotacion * Time.deltaTime, 0);
         }
-
     }
 }
