@@ -13,7 +13,7 @@ public class Courutine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cont = 10; 
+        cont = 40; 
         StartCoroutine("coroutine_contador");
     }
 
