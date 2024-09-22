@@ -39,6 +39,4 @@ public class ChangeSceneScore : MonoBehaviour
         PlayerPrefs.SetInt("Puntaje", puntaje);//Almacena el puntaje en memoria
         cambioEscena(index);
     }
-    
-
 }
